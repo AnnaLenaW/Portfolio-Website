@@ -7,21 +7,21 @@ Accent Color (gold): #e5c453;
 
 @font-face {
   font-family: "FuturaPT";
-  src: url(FuturaPTHeavy.woff) format ("woff");
+  src: url(../FuturaPTHeavy.woff) format("woff");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "FuturaPT";
-  src: url(FuturaPTMedium.woff) format ("woff");
+  src: url(../FuturaPTMedium.woff) format("woff");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "FuturaPT";
-  src: url(FuturaPTLight.woff) format ("woff");
+  src: url(../FuturaPTLight.woff) format("woff");
   font-style: normal;
   font-weight: 300;
 }
@@ -57,7 +57,7 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 h4 {
@@ -76,11 +76,13 @@ img {
 a {
   color: #393939;
   text-decoration: underline;
+  font-family: "FuturaPT";
+  font-weight: 700;
 }
 
 a:active {
   color: #e5c453;
-  font-weight: 900;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -88,7 +90,7 @@ a:hover,
 a:focus {
   color: #e5c453;
   text-decoration: underline;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .button {
@@ -105,6 +107,7 @@ a:focus {
 .button:hover {
   background-color: #fff;
   color: #e5c453; /* needed to override the default link color */
+  font-family: "FuturaPT";
   font-weight: 500;
   padding: 8px;
   text-decoration: none;
@@ -115,6 +118,8 @@ a:focus {
 .button:active {
   background-color: #fff;
   color: #e5c453; /* needed to override the default link color */
+  font-family: "FuturaPT";
+  font-style: normal;
   font-weight: 500;
   padding: 8px;
   text-decoration: none;
@@ -125,6 +130,8 @@ a:focus {
 .button.contact {
   background-color: #fff;
   color: #e5c453; /* needed to override the default link color */
+  font-family: "FuturaPT";
+  font-style: normal;
   font-weight: 500;
   padding: 8px;
   text-decoration: none;
@@ -135,6 +142,8 @@ a:focus {
 .button.contact:hover {
   background-color: #e5c453;
   color: #fff; /* needed to override the default link color */
+  font-family: "FuturaPT";
+  font-style: normal;
   font-weight: 300;
   padding: 8px;
   text-decoration: none;
@@ -146,6 +155,8 @@ a:focus {
 .navigation {
   background-color: #fff;
   color: #393939;
+  font-family: "FuturaPT";
+  font-style: normal;
   font-weight: 500;
   text-decoration: none;
 }
@@ -153,6 +164,8 @@ a:focus {
 .navigation:hover {
   background-color: #fff;
   color: #e5c453;
+  font-family: "FuturaPT";
+  font-style: normal;
   font-weight: 700;
   text-decoration: underline;
 }
@@ -160,6 +173,8 @@ a:focus {
 .navigation:active {
   background-color: #fff;
   color: #e5c453;
+  font-family: "FuturaPT" !important;
+  font-style: normal !important;
   font-weight: 700;
   text-decoration: underline;
 }
