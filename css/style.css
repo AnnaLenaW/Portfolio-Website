@@ -26,6 +26,20 @@ Accent Color (gold): #e5c453;
   font-weight: 300;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #393939;
+  padding: 10;
+  margin: 10;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.607);
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
 body {
   background-color: #fff;
   font-family: 'FuturaPT', sans-serif;
@@ -69,15 +83,10 @@ img {
   width: 100%;
 }
 
-.logo {
-  max-width: 150px;
-}
-
 a {
   color: #393939;
-  text-decoration: underline;
-  font-family: "FuturaPT";
   font-weight: 700;
+  text-decoration: none;
 }
 
 a:active {
@@ -89,8 +98,8 @@ a:active {
 a:hover,
 a:focus {
   color: #e5c453;
-  text-decoration: underline;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .button {
@@ -134,6 +143,7 @@ a:focus {
   font-style: normal;
   font-weight: 500;
   padding: 8px;
+  margin: 0;
   text-decoration: none;
   border-radius: 30px;
   border: 2px solid #e5c453;
@@ -153,8 +163,10 @@ a:focus {
 }
 
 .navigation {
-  background-color: #fff;
-  color: #393939;
+  display: inline-block;
+  width: 100%;
+  background-color: #393939;
+  color: #fff;
   font-family: "FuturaPT";
   font-style: normal;
   font-weight: 500;
@@ -162,7 +174,8 @@ a:focus {
 }
 
 .navigation:hover {
-  background-color: #fff;
+  display: inline-block;
+  background-color: #393939;
   color: #e5c453;
   font-family: "FuturaPT";
   font-style: normal;
@@ -171,10 +184,94 @@ a:focus {
 }
 
 .navigation:active {
-  background-color: #fff;
+  background-color: #393939;
   color: #e5c453;
-  font-family: "FuturaPT" !important;
-  font-style: normal !important;
+  font-family: "FuturaPT";
+  font-style: normal;
   font-weight: 700;
   text-decoration: underline;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.logo {
+  max-width: 80px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center; /* Centers text */
+  color: #fff;
+}
+
+#hero {
+  background-color: #393939;
+  color: #fff;
+  margin: 0;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
+}
+
+.center {
+  text-align: center;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+nav > ul > li > a:active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+nav > ul > li > a:focus {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #e5c453;
+}
+
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
