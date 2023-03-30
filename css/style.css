@@ -9,12 +9,33 @@ Accent Color (gold): #e5c453;
   font-family: "FuturaPT";
   src: url(../FuturaPTHeavy.woff) format("woff");
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "FuturaPT";
+  src: url(../FuturaPTBold.woff) format("woff");
+  font-style: normal;
+  font-weight: 800;
 }
 
 @font-face {
   font-family: "FuturaPT";
   src: url(../FuturaPTMedium.woff) format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "FuturaPT";
+  src: url(../FuturaPTDemi.woff) format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "FuturaPT";
+  src: url(../FuturaPTBook.woff) format("woff");
   font-style: normal;
   font-weight: 500;
 }
@@ -23,7 +44,7 @@ Accent Color (gold): #e5c453;
   font-family: "FuturaPT";
   src: url(../FuturaPTLight.woff) format("woff");
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 * {
@@ -32,8 +53,7 @@ Accent Color (gold): #e5c453;
 
 header {
   background-color: #393939;
-  padding: 10;
-  margin: 0;
+
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.212);
   position: fixed;
   width: 100%;
@@ -61,7 +81,7 @@ h4 {
 
 h1 {
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
   text-align: center;
 }
@@ -73,18 +93,28 @@ h2 {
 
 h2 .footer {
   font-size: 1.8em;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
 }
 
 h3 {
   font-size: 1.5em;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h4 {
   font-size: 1.2em;
-  font-weight: 300;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 img {
