@@ -7,42 +7,42 @@ Accent Color (gold): #e5c453;
 
 @font-face {
   font-family: "FuturaPT";
-  src: url(../FuturaPTHeavy.woff) format("woff");
+  src: url(../font/FuturaPTHeavy.woff) format("woff");
   font-style: normal;
   font-weight: 900;
 }
 
 @font-face {
   font-family: "FuturaPT";
-  src: url(../FuturaPTBold.woff) format("woff");
+  src: url(../font/FuturaPTBold.woff) format("woff");
   font-style: normal;
   font-weight: 800;
 }
 
 @font-face {
   font-family: "FuturaPT";
-  src: url(../FuturaPTMedium.woff) format("woff");
+  src: url(../font/FuturaPTMedium.woff) format("woff");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "FuturaPT";
-  src: url(../FuturaPTDemi.woff) format("woff");
+  src: url(../font/FuturaPTDemi.woff) format("woff");
   font-style: normal;
   font-weight: 600;
 }
 
 @font-face {
   font-family: "FuturaPT";
-  src: url(../FuturaPTBook.woff) format("woff");
+  src: url(../font/FuturaPTBook.woff) format("woff");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "FuturaPT";
-  src: url(../FuturaPTLight.woff) format("woff");
+  src: url(../font/FuturaPTLight.woff) format("woff");
   font-style: normal;
   font-weight: 400;
 }
@@ -53,11 +53,12 @@ Accent Color (gold): #e5c453;
 
 header {
   background-color: #393939;
-
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.212);
   position: fixed;
   width: 100%;
-  text-align: center;
+  text-align: unset;
+  display: flex;
+  justify-content: space-around;
 }
 
 body {
@@ -80,35 +81,35 @@ h4 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 900;
   font-style: normal;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 2.5em;
   font-weight: 700;
 }
 
 h2 .footer {
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 800;
   text-align: center;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 700;
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight: 600;
 }
 
 h5 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 500;
 }
 
@@ -119,6 +120,59 @@ h6 {
 
 img {
   width: 100%;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 20px; /* left and right */
+}
+
+.logo {
+  max-width: 60px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#hero {
+  background-color: #393939;
+  color: #fff;
+  height: 500px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#about-page h2 {
+  color: #393939;
+  margin-top: 0;
+  text-align: center;
+}
+
+main {
+  padding-top: 60px;
+}
+
+footer {
+  background-color: #393939;
+  color: #fff;
+}
+
+.social-icons img {
+  max-width: 40px;
 }
 
 a {
@@ -141,34 +195,35 @@ a:focus {
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #e5c453;
   color: #fff; /* needed to override the default link color */
-  font-weight: 700;
-  padding: 10px;
-  border-radius: 30px;
-  transition: 1s opacity;
-  text-decoration: none;
-}
-
-.button:hover {
-  background-color: #fff;
-  color: #e5c453; /* needed to override the default link color */
   font-family: "FuturaPT";
-  font-weight: 500;
-  padding: 8px;
+  font-weight: 700;
+  padding: 5px 100px;
   text-decoration: none;
   border-radius: 30px;
   border: 2px solid #e5c453;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  background-color: #e5c453;
+  color: #fff;
+  font-family: "FuturaPT";
+  font-weight: 700;
+  padding: 5px 100px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid #e5c453;
+  opacity: 0.8;
 }
 
 .button:active {
   background-color: #fff;
-  color: #e5c453; /* needed to override the default link color */
+  color: #e5c453;
   font-family: "FuturaPT";
-  font-style: normal;
-  font-weight: 500;
-  padding: 8px;
+  font-weight: 700;
+  padding: 5px 100px;
   text-decoration: none;
   border-radius: 30px;
   border: 2px solid #e5c453;
@@ -176,28 +231,37 @@ a:focus {
 
 .button.contact {
   background-color: #fff;
-  color: #e5c453; /* needed to override the default link color */
+  color: #e5c453;
   font-family: "FuturaPT";
-  font-style: normal;
-  font-weight: 500;
-  padding: 8px;
-  margin: 0;
+  font-weight: 700;
+  padding: 5px 100px;
   text-decoration: none;
   border-radius: 30px;
   border: 2px solid #e5c453;
+  transition: 0.2s opacity;
 }
 
 .button.contact:hover {
+  background-color: #fff;
+  color: #4a4a4a5a;
+  font-family: "FuturaPT";
+  font-weight: 700;
+  padding: 5px 100px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid #4a4a4a5a;
+  opacity: 0.9;
+}
+
+.button.contact:active {
   background-color: #e5c453;
   color: #fff; /* needed to override the default link color */
   font-family: "FuturaPT";
   font-style: normal;
-  font-weight: 300;
-  padding: 8px;
+  font-weight: 700;
+  padding: 7px 140px;
   text-decoration: none;
   border-radius: 30px;
-  border: 2px solid #fff;
-  opacity: 0.8;
 }
 
 .navigation {
@@ -228,47 +292,6 @@ a:focus {
   font-style: normal;
   font-weight: 700;
   text-decoration: underline;
-}
-
-/* Layout styling */
-
-.container {
-  padding: 0 20px; /* Seitenrand left and right */
-}
-
-.logo {
-  max-width: 80px;
-}
-
-.social {
-  max-width: 50px;
-}
-
-.row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
-}
-
-#work .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a;
-}
-
-#hero {
-  background-color: #393939;
-  color: #fff;
-  margin: none;
-  height: 500px;
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-}
-
-main {
-  padding-top: 133px;
-}
-
-.center {
-  text-align: center;
 }
 
 nav > ul {
@@ -311,3 +334,66 @@ nav > ul > li > a:hover {
   text-transform: uppercase;
   font-weight: 700;
 }
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    font-size: 18px;
+  }
+
+  main {
+    font-size: 18px;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
