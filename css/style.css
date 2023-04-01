@@ -124,6 +124,17 @@ img {
 
 /* Layout styling */
 
+main {
+  padding-top: 60px;
+}
+
+footer {
+  background-color: #393939;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
 .container {
   padding: 0 20px; /* left and right */
 }
@@ -145,7 +156,8 @@ img {
 #hero {
   background-color: #393939;
   color: #fff;
-  height: 500px;
+  height: 650px;
+  padding-top: 100px;
   text-align: center;
   display: inline-block;
   width: 100%;
@@ -162,18 +174,53 @@ img {
   text-align: center;
 }
 
-main {
-  padding-top: 60px;
-}
-
-footer {
-  background-color: #393939;
-  color: #fff;
-}
-
 .social-icons img {
   max-width: 40px;
 }
+
+/* Animation */
+@keyframes color-change {
+  from { fill: #edc655; }
+  to { fill: #f76414; }
+}
+
+@keyframes cloud-move {
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
+}
+
+@keyframes cloud-move-reverse {
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
+}
+
+.berlin-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.sun {
+  animation-duration: 3s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-front {
+  animation-duration: 10s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-back {
+  animation: 30s cloud-move-reverse infinite alternate linear;
+}
+
+/* End of Animation */
 
 a {
   color: #393939;
@@ -199,9 +246,10 @@ a:focus {
   color: #fff; /* needed to override the default link color */
   font-family: "FuturaPT";
   font-weight: 700;
-  padding: 5px 100px;
+  padding: 5px 30px;
   text-decoration: none;
   border-radius: 30px;
+  float: left;
   border: 2px solid #e5c453;
   transition: 0.2s opacity;
 }
@@ -210,10 +258,7 @@ a:focus {
   background-color: #e5c453;
   color: #fff;
   font-family: "FuturaPT";
-  font-weight: 700;
-  padding: 5px 100px;
-  text-decoration: none;
-  border-radius: 30px;
+  padding: 5px 32px;
   border: 2px solid #e5c453;
   opacity: 0.8;
 }
@@ -223,33 +268,34 @@ a:focus {
   color: #e5c453;
   font-family: "FuturaPT";
   font-weight: 700;
-  padding: 5px 100px;
+  padding: 5px 32px;
   text-decoration: none;
   border-radius: 30px;
   border: 2px solid #e5c453;
 }
 
 .button.contact {
-  background-color: #fff;
+  background-color: #393939;
   color: #e5c453;
   font-family: "FuturaPT";
   font-weight: 700;
-  padding: 5px 100px;
-  text-decoration: none;
+  padding: 5px 30px;
   border-radius: 30px;
-  border: 2px solid #e5c453;
+  width: auto;
+  float: none;
+  border: 1.5px solid #e5c453;
   transition: 0.2s opacity;
 }
 
 .button.contact:hover {
-  background-color: #fff;
-  color: #4a4a4a5a;
+  background-color: #e5c3530c;
+  color: #e5c453;
   font-family: "FuturaPT";
   font-weight: 700;
-  padding: 5px 100px;
+  padding: 5px 32px;
   text-decoration: none;
   border-radius: 30px;
-  border: 2px solid #4a4a4a5a;
+  border: 2px solid #e5c453;
   opacity: 0.9;
 }
 
@@ -259,7 +305,7 @@ a:focus {
   font-family: "FuturaPT";
   font-style: normal;
   font-weight: 700;
-  padding: 7px 140px;
+  padding: 7px 32px;
   text-decoration: none;
   border-radius: 30px;
 }
@@ -271,8 +317,8 @@ a:focus {
   color: #fff;
   font-family: "FuturaPT";
   font-style: normal;
-  font-weight: 500;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .navigation:hover {
@@ -281,8 +327,7 @@ a:focus {
   color: #e5c453;
   font-family: "FuturaPT";
   font-style: normal;
-  font-weight: 700;
-  text-decoration: underline;
+  font-weight: 500;
 }
 
 .navigation:active {
@@ -290,8 +335,7 @@ a:focus {
   color: #e5c453;
   font-family: "FuturaPT";
   font-style: normal;
-  font-weight: 700;
-  text-decoration: underline;
+  font-weight: 500;
 }
 
 nav > ul {
@@ -306,20 +350,25 @@ nav > ul > li {
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
+}
+
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 nav > ul > li > a:visited {
   padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 nav > ul > li > a:active {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 nav > ul > li > a:focus {
@@ -329,16 +378,12 @@ nav > ul > li > a:focus {
   color: #e5c453;
 }
 
-nav > ul > li > a:hover {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 [class*="col-"] {
   float: left;
   padding: 10px;
 }
+
+/* Responsive Design */
 
 /* ==============================
 Medium devices (640px and larger)
@@ -395,5 +440,8 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+  header {
+    font-size: 22px;
+  }
 }
 
