@@ -2,47 +2,60 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Anna Lena Westermann Design-Portfolio</title>
   <!-- Favicon -->
-  <link rel="icon" href="img/favicon.ico.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="img/favicon.ico.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
 
   <!-- Embeded CSS -->
   <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 
   <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
+ 
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/7b8c7b340b.js" crossorigin="anonymous"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
-
   <header class="">
-    <a href="index.html"><img src="img/logotype.svg" alt="" class="logo"></a>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+    <a href="index.html"><img src="img/logotype.svg" alt="" class="logo" /></a>
     <nav>
       <ul class="navigation">
         <li><a href="index.html" class="navigation">Work</a></li>
         <li><a href="about.html" class="navigation">About</a></li>
         <li><a href="#contact" class="navigation">Contact</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
       </ul>
     </nav>
+      </div>
+    </div>
   </header>
   <main>
     <!-- hero section starts here -->
     <div id="hero" class="herotext">
       <h1>Hi, my name is Anna.</h1>
-      <h6>I am a designer from Hamburg and have experience in developing responsive UX|UI designs, including for medical products and shopping software. 
-        It makes me happy when users move smoothly through interfaces and find their goal in a playful way. I have a wide range of interests and love learning new things every day.</h6>
+      <h6>
+        I am a designer from Hamburg and have experience in
+        developing responsive UX|UI designs, including for medical
+        products and shopping software. It makes me happy when users
+        move smoothly through interfaces and find their goal in a
+        playful way. I have a wide range of interests and love
+        learning new things every day.
+      </h6>
     </div>
     <!-- hero section ends -->
     <!-- work section starts here -->
@@ -50,50 +63,82 @@
       <h2>My Work</h2>
 
       <!-- Start project block -->
+
       <!-- row 1 -->
       <div class="row">
         <!-- col 1 -->
         <div class="col-md-6 col-lg-7">
           <picture>
-            <source srcset="img/grow/mobile/grow_cover@1x.jpg" media="(max-width:767px)">
-            <img src="img/grow/desktop/grow_cover@2x.jpg" alt="My Image">
+            <source srcset="img/grow/mobile/grow_cover@1x.jpg" media="(max-width:767px)"/>
+            <img src="img/grow/desktop/grow_cover@2x.jpg" alt="My Image" />
           </picture>
         </div>
         <!-- col 2 -->
         <div class="col-md-6 col-lg-5">
-          <h5 class="site-lineheight">Tools</h5> <h6>Figma | Illustrator | Pen and Paper</h6>
-            <h5>Time</h5> <h6>01/2023-02/2023</h6>
-          <h3>grow</h3>
-          <p>Created an accessible finance app to optimise navigation and use and to increase trust.
-            Developed brand guidelines, user flows, wireframes (low, mid, high fidelity) and prototypes with animation,
-            designed final UI and
-            mockups used Figma, Illustrator and Slack.</p>
+          <div class="project-section">
+            <h5 class="site-lineheight">Tools</h5>
+            <h6>Figma | Illustrator | Pen and Paper</h6>
+          </div>
+          <div class="project-section">
+            <h5>Time</h5>
+            <h6>01/2023-02/2023</h6>
+          </div>
+          <div class="project-section">
+            <h3>grow</h3>
+            <p>
+              Created an accessible finance app to optimise
+              navigation and use and to increase trust.
+              Developed brand guidelines, user flows,
+              wireframes (low, mid, high fidelity) and
+              prototypes with animation, designed final UI and
+              mockups used Figma, Illustrator and Slack.
+            </p>
 
-          <a href="grow.html" class="button">To case study</a>
+            <a href="grow.html" class="button">To case study</a>
+          </div>
         </div>
       </div>
-      <!-- row 2 -->
+
+      <!-- row 2 Light Days-->
       <div class="row">
         <!-- col 1 -->
-        <div class="col-md-6 col-lg-7">
-          <h5 class="site-lineheight">Tools</h5> <h6>Figma | InVision | Illustrator | Pen and Paper</h6>
-            <h5>Time</h5> <h6>10/2022-11/2022</h6>
-          <h3>Light Days</h3>
-          <p>Developed the iOS and Android version of a native app to identify symptoms that occur during the menstrual
-            cycle. Conducted user surveys and interviews, analysed and implemented user feedback, developed user flows, created
-            wireframes with Crazy 8 method, prototypes with animations and designed the final UI with Figma to optimise the
-            navigation and the visual design.</p>
-          <a href="light-days.html" class="button">To case study</a>
-        </div>
-
-        <!-- col 2 -->
         <div class="col-md-6 col-lg-5">
+          <div class="project-section">
+            <h5 class="site-lineheight">Tools</h5>
+            <h6>Figma | Illustrator | Pen and Paper</h6>
+          </div>
+          <div class="project-section">
+            <h5>Time</h5>
+            <h6>10/2022-11/2022</h6>
+          </div>
+          <div class="project-section">
+            <h3>Light Days</h3>
+            <p>
+              Developed the iOS and Android version of a native
+              app to identify symptoms that occur during the
+              menstrual cycle. Conducted user surveys and
+              interviews, analysed and implemented user feedback,
+              developed user flows, created wireframes with Crazy
+              8 method, prototypes with animations and designed
+              the final UI with Figma to optimise the navigation
+              and the visual design.
+            </p>
+
+            <a href="light-days.html" class="button">To case study</a>
+          </div>
+        </div>
+        <!-- col 2 -->
+        <div class="col-md-6 col-lg-7">
           <picture>
-            <source srcset="img/lightdays/mobile/light-days_cover@1x.jpg" media="(max-width:767px)">
-            <img src="img/lightdays/desktop/light_days_cover@2x.jpg" alt="My Image">
+            <source
+              srcset="img/lightdays/mobile/light-days_cover@1x.jpg" media="(max-width:767px)"/>
+            <img src="img/lightdays/desktop/light_days_cover@2x.jpg" alt="My Image"/>
           </picture>
         </div>
       </div>
+
+
+
 
       <!-- row 3 -->
       <div class="row">
@@ -1546,7 +1591,10 @@
         <!-- col 2 -->
         <div class="col-md-6 col-lg-5">
           <h3>CSS Animation</h3>
-          <p>This is an example of a SVG image which is animated using keyframes.</p>
+          <p>
+            This is an example of a SVG image which is animated
+            using keyframes.
+          </p>
         </div>
       </div>
     </div>
@@ -1557,7 +1605,8 @@
     <h4>Get in Touch</h4>
     <p>
       I am open to part-time opportunities in Hamburg or remotely.
-      <br> Get in touch for opportunities or just to say hi.
+      <br />
+      Get in touch for opportunities or just to say hi.
     </p>
     <div>
       <a href="mailto:annalena.westermann88@gmail.com" class="button contact">say hi</a>
@@ -1567,18 +1616,26 @@
         <!--Social Media Layout and Placeholders-->
         <li>
           <a href="https://www.linkedin.com/in/anna-lena-westermann" target="_blank">
-            <img src="img/social-icons/linkedin.svg" alt=""></a>
+            <img src="img/social-icons/linkedin.svg" alt="" /></a>
         </li>
         <li>
           <a href="https://www.behance.net/annalewesterm1">
-            <img src="img/social-icons/behance.svg" alt=""></a>
+            <img src="img/social-icons/behance.svg" alt="" /></a>
         </li>
       </ul>
     </nav>
     <p>Copyright Anna Lena Westermann 2023</p>
   </footer>
 
-  <script src="js/scripts.js"></script>
+    <!-- Embeded JavaScript -->
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+
 </body>
 
 </html>

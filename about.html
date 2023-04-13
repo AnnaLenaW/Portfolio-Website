@@ -1,187 +1,225 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>About Me</title>
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <head>
+        <meta charset="utf-8" />
+        <title>About Me</title>
+        <!-- Favicon -->
+        <link rel="icon" href="img/favicon.ico.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
 
-    <!-- Embeded CSS -->
-    <link rel="stylesheet" type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Embeded CSS -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"
+        />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap"
-      rel="stylesheet">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap"
+            rel="stylesheet"
+        />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+            <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/7b8c7b340b.js" crossorigin="anonymous"></script>
 
-<body id="about-page">
-  <header class="">
-    <a href="index.html"><img src="img/logotype.svg" alt="" class="logo"></a>
-    <nav>
-      <ul class="navigation">
-        <li><a href="index.html" class="navigation">Work</a></li>
-        <li><a href="about.html" class="navigation">About</a></li>
-        <li><a href="#contact" class="navigation">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
 
-  <main>
-    <div class="container">
-      <h1>About Me</h1>
-       <!-- row 1 -->
-       <div class="row">
-        <!-- col 1 -->
-        <div class="col-md-6 col-lg-4">
-      <picture>
-        <source srcset="img/about-me/alw_profile_image@1x.jpg" media="(max-width:767px)">
-        <img src="img/about-me/alw_profile_image@2x.jpg" alt="My Image">
-      </picture>
-        </div>
-       <!-- row 1 -->
-       <div class="row">
-        <!-- col 2 -->
-        <div class="col-md-6 col-lg-8">
-      <p>I am Anna, a UI|UX designer from Hamburg, Germany with
-        a diploma in industrial design and a specialisation in online
-        marketing. It makes me happy when users move through
-        interfaces smoothly and find their goal playfully.
+    <body id="about-page">
+        <header class="">
+            <div class="container">
+                <div class="navtoggle" id="myNavtoggle">
+              <a href="index.html"><img src="img/logotype.svg" alt="" class="logo" /></a>
+              <nav>
+                <ul class="navigation">
+                  <li><a href="index.html" class="navigation">Work</a></li>
+                  <li><a href="about.html" class="navigation">About</a></li>
+                  <li><a href="#contact" class="navigation">Contact</a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+              </nav>
+                </div>
+              </div>
+        </header>
 
-        I realised early on in my studies that I have a passion for 2-
-        dimensional design. During my studies and my time as a
-        graphic designer I learned all the skills in colour, typography
-        and iconography. I also taught myself the most important tools
-        to turn simple ideas into great designs that are simple,
-        enjoyable and harmonious. For me, it was the next logical
-        step to deepen my knowledge in UI design.
+        <main>
+            <div class="container">
+                <h1 class="about-header">About Me</h1>
+                <!-- row 1 -->
+                <div class="row">
+                    <!-- col 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <picture>
+                            <source
+                                srcset="img/about-me/alw_profile_image@1x.jpg"
+                                media="(max-width:767px)"
+                            />
+                            <img
+                                src="img/about-me/alw_profile_image@2x.jpg"
+                                alt="My Image"
+                            />
+                        </picture>
+                    </div>
+                    <!-- col 2 -->
+                    <div class="col-md-6 col-lg-8">
+                        <p>
+                            I am Anna, a UI|UX designer from Hamburg,
+                            Germany with a diploma in industrial design and
+                            a specialisation in online marketing. It makes
+                            me happy when users move through interfaces
+                            smoothly and find their goal playfully. I
+                            realised early on in my studies that I have a
+                            passion for 2- dimensional design. During my
+                            studies and my time as a graphic designer I
+                            learned all the skills in colour, typography and
+                            iconography. I also taught myself the most
+                            important tools to turn simple ideas into great
+                            designs that are simple, enjoyable and
+                            harmonious. For me, it was the next logical step
+                            to deepen my knowledge in UI design. I aim to
+                            work in a creative and innovative team to
+                            develop interfaces that make the user's life
+                            easier without thinking too much about it. I am
+                            currently available for both freelance and
+                            contract work in the Hamburg area or remotely.
+                            In addition to my work and passions in UI
+                            design, I also love travelling around the world
+                            and sports - especially skiing, boxing and
+                            Pilates. My hobbies and work create in
+                            combination a perfect work-life-balance.
+                        </p>
 
+                        <a
+                            href="files/resume_alw.pdf"
+                            target="_blank"
+                            class="button"
+                            >Download Resume</a
+                        >
+                    </div>
+                </div>
+                <!-- row 2 -->
+                <div class="row">
+                    <h2 class="about-skills-tools">Skills and Tools</h2>
+                </div>
+                <!-- row 3 -->
+                <div class="row">
+                    <!-- col 1 -->
+                    <div class="col-md-6 skills-container">
+                        <h3>Skills</h3>
+                        <h4>Methodology</h4>
+                        <ul>
+                            <li>Design Thinking Process</li>
+                            <li>User-Centered Design</li>
+                            <li>Lean UX</li>
+                        </ul>
+                        <h4>Research</h4>
+                        <ul>
+                            <li>Competitive and SWOT Analysis</li>
+                            <li>User Interviews</li>
+                            <li>User Surveys</li>
+                            <li>User Personas</li>
+                            <li>User Stories</li>
+                            <li>User Flows</li>
+                        </ul>
+                        <h4>Design</h4>
+                        <ul>
+                            <li>UI Design</li>
+                            <li>Style Guide</li>
+                            <li>Brand Design</li>
+                            <li>Typography</li>
+                            <li>Iconography</li>
+                            <li>Grid System</li>
+                            <li>Visual Hierarchy</li>
+                            <li>Responsive Design</li>
+                            <li>Mobile-First-Design</li>
+                            <li>Wireframing (low, mid, high fidelity)</li>
+                            <li>Crazy 8</li>
+                            <li>Prototyping and Animation</li>
+                            <li>Mockups</li>
+                            <li>HTML and CSS Basics</li>
+                        </ul>
+                        <h4>Testing</h4>
+                        <ul>
+                            <li>Usability Tests</li>
+                            <li>A|B Testing</li>
+                            <li>Preference Tests</li>
+                        </ul>
+                    </div>
+                      <!-- col 2 -->
+                      <div class="col-md-6">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Adobe Creative Suite</li>
+                            <li>Figma and Fig Jam</li>
+                            <li>Adobe XD</li>
+                            <li>InVision</li>
+                            <li>Usability Hub</li>
+                            <li>Slack</li>
+                            <li>MS Office</li>
+                            <li>SEO and SEA</li>
+                            <li>Wordpress</li>
+                            <li>Elementor</li>
+                            <li>Joomla</li>
+                            <li>Clever Reach</li>
+                            <li>Photography</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
 
-        I aim to work in a creative and innovative team to develop
-        interfaces that make the user's life easier without thinking too
-        much about it. I am currently available for both freelance and
-        contract work in the Hamburg area or remotely. In addition to
-        my work and passions in UI design, I also love travelling
-        around the world and sports - especially skiing, boxing and
-        Pilates. My hobbies and work create in combination a perfect
-        work-life-balance.</p>
+        <footer id="contact" class="">
+            <h4>Get in Touch</h4>
+            <p>
+                I am open to part-time opportunities in Hamburg or remotely.
+                <br />
+                Get in touch for opportunities or just to say hi.
+            </p>
+            <div>
+                <a
+                    href="mailto:annalena.westermann88@gmail.com"
+                    class="button contact"
+                    >say hi</a
+                >
 
-      <a href="files/resume_alw.pdf" target="_blank" class="button">Download Resume</a>
-        </div>
-       </div>
-       </div>
+                <nav>
+                    <ul class="social-icons img">
+                        <!--Social Media Layout and Placeholders-->
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/anna-lena-westermann"
+                                target="_blank"
+                            >
+                                <img src="img/social-icons/linkedin.svg" alt=""
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/annalewesterm1">
+                                <img src="img/social-icons/behance.svg" alt=""
+                            /></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>Copyright Anna Lena Westermann 2023</p>
+            </div>
+        </footer>
 
-      <div class="container">
-        <h2>Skills and Tools</h2>
-         <!-- row 2 -->
-         <div class="row">
-          <!-- col 1 -->
-          <div class="col-md-6">
-        <h3>Skills</h3>
-        <ul>
-          <h4>Methodology</h4>
-          <li>Design Thinking Process</li>
-          <li>User-Centered Design</li>
-          <li>Lean UX</li>
+        
+          <!-- Embeded JavaScript -->
+          <script src="js/jquery-3.6.4.min.js"></script>
+          <script src="js/scripts.js"></script>
 
-          <h4>Research</h4>
-          <li>Competitive and SWOT Analysis</li>
-          <li>User Interviews</li>
-          <li>User Surveys</li>
-          <li>User Personas</li>
-          <li>User Stories</li>
-          <li>User Flows</li>
+          <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
 
-          <h4>Design</h4>
-          <li>UI Design</li>
-          <li>Style Guide</li>
-          <li>Brand Design</li>
-          <li>Typography</li>
-          <li>Iconography</li>
-          <li>Grid System</li>
-          <li>Visual Hierarchy</li>
-          <li>Responsive Design</li>
-          <li>Mobile-First-Design</li>
-          <li>Wireframing</li>
-          <ul>
-            <li>low</li>
-            <li>mid</li>
-            <li>high fidelity</li>
-          </ul>
-          <li>Crazy 8</li>
-          <li>Prototyping and Animation</li>
-          <li>Mockups</li>
-          <li>HTML and CSS Basics</li>
-
-          <h4>Testing</h4>
-          <li>Usability Tests</li>
-          <li>A|B Testing</li>
-          <li>Preference Tests</li>
-        </ul>
-    </div>
-
-         <!-- row 2 -->
-         <div class="row">
-          <!-- col 2 -->
-          <div class="col-md-6">
-        <h3>Tools</h3>
-        <ul>
-          <li>Adobe Creative Suite</li>
-          <li>Figma and Fig Jam</li>
-          <li>Adobe XD</li>
-          <li>InVision</li>
-          <li>Usability Hub</li>
-          <li>Slack</li>
-          <li>MS Office</li>
-          <li>SEO and SEA</li>
-          <li>Wordpress</li>
-          <li>Elementor</li>
-          <li>Joomla</li>
-          <li>Clever Reach</li>
-          <li>Photography</li>
-        </ul>
-        </div>
-    </div>
-      </div>
-    </div>
-    </div>
-  </main>
-
-  <footer id="contact" class="">
-    <h4>Get in Touch</h4>
-      <p>
-        I am open to part-time opportunities in Hamburg or remotely. 
-        <br> Get in touch for opportunities or just to say hi.
-      </p>
-      <div>
-        <a href="mailto:annalena.westermann88@gmail.com" class="button contact">say hi</a>
-   
-      <nav>
-        <ul class="social-icons img">
-          <!--Social Media Layout and Placeholders-->
-          <li>
-            <a href="https://www.linkedin.com/in/anna-lena-westermann" target="_blank">
-              <img src="img/social-icons/linkedin.svg" alt=""></a>
-          </li>
-          <li>
-            <a href="https://www.behance.net/annalewesterm1">
-              <img src="img/social-icons/behance.svg" alt=""></a>
-          </li>
-        </ul>
-      </nav>
-      <p>Copyright Anna Lena Westermann 2023</p>
-    </div>
-  </footer>
-
-  <script src="js/scripts.js"></script>
-</body>
+    </body>
 </html>

@@ -108,6 +108,8 @@ h3 {
 h4 {
   font-size: 1.4em;
   font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
 h5 {
@@ -121,6 +123,11 @@ h6 {
   color: #8e8e8e;
 }
 
+p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
 img {
   width: 100%;
 }
@@ -128,7 +135,6 @@ img {
 /* Layout styling */
 
 main {
-  padding-top: 40px;
   margin: auto;
 }
 
@@ -182,8 +188,8 @@ main p {
 #hero {
   background-color: #393939;
   color: #fff;
-  height: 600px;
-  padding: 30px 50px;
+  height: 700px;
+  padding: 100px 20px;
   text-align: center;
   display: inline-block;
   width: 100%;
@@ -197,14 +203,29 @@ main p {
   width: 100%;
 }
 
-#about-page h2 {
-  color: #393939;
-  margin-top: 0;
-  text-align: center;
+.project-section {
+  margin-bottom: 20px;
+}
+
+.project-section h5,
+.project-section h6 {
+  margin: 0;
+}
+
+.project-section h3 {
+  margin: 0 0 10px;
+}
+
+.about-header {
+  padding: 60px 0 0;
 }
 
 #about-picture {
   min-width: 300px;
+}
+
+.about-skills-tools {
+  margin: 30 0 5;
 }
 
 .social-icons img {
@@ -422,6 +443,10 @@ nav > ul > li > a:focus {
   padding: 10px;
 }
 
+.skills-container h4 {
+  margin: 15px 0 10px;
+}
+
 /* Responsive Design */
 
 /* ==============================
@@ -430,16 +455,15 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
   }
 
   main {
-    padding: 50px 0;
+    padding: 10px 0 50px;
     font-size: 18px;
   }
 
   #hero {
-    padding: 40px 100px;
+    padding: 60px 80px;
     font-size: 18px;
   }
 
@@ -456,11 +480,6 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
-
-  #about-page h3 {
-    margin: 0;
-    padding: 50px;
-  }
 }
 
 /* ==============================
@@ -472,17 +491,17 @@ Large devices (1024px or larger)
   }
 
   main {
-    padding-top: 90px;
+    padding: 80px 0;
     font-size: 18px;
+  }
+
+  #hero {
+    padding: 70px 120px;
+    font-size: 22px;
   }
 
   footer {
     text-align: center;
-  }
-
-  #hero {
-    padding: 60px 200px;
-    font-size: 22px;
   }
 
   .col-md-3 {
@@ -523,5 +542,9 @@ X-large devices (1440px or larger)
   .logo {
     max-width: 100px;
   }
+}
+
+#hero {
+  font-size: 22px;
 }
 

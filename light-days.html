@@ -21,19 +21,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap"
       rel="stylesheet">
 
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/7b8c7b340b.js" crossorigin="anonymous"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
 <body>
     <header class="">
-        <a href="index.html"><img src="img/logotype.svg" alt="" class="logo"></a>
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html" class="navigation">Work</a></li>
-            <li><a href="about.html" class="navigation">About</a></li>
-            <li><a href="#contact" class="navigation">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html"><img src="img/logotype.svg" alt="" class="logo" /></a>
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html" class="navigation">Work</a></li>
+              <li><a href="about.html" class="navigation">About</a></li>
+              <li><a href="#contact" class="navigation">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+            </div>
+          </div>
       </header>
 
     <main class="container">
@@ -434,7 +442,14 @@
           <p>Copyright Anna Lena Westermann 2023</p>
         </div>
       </footer>
-      
+
+      <!-- Embeded JavaScript -->
+      <script src="js/jquery-3.6.4.min.js"></script>
       <script src="js/scripts.js"></script>
+
+      <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
     </body>
     </html>
