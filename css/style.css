@@ -57,9 +57,6 @@ header {
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.212);
   position: fixed;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0 4px;
 }
 
 body {
@@ -163,9 +160,10 @@ main p {
   margin: 0;
 }
 
+/* 25px top and bottom, 0 left and right */
 .row {
   margin: 10px 0;
-  background-color: #fff; /* 25px top and bottom, 0 left and right */
+  background-color: #fff;
 }
 
 .row::after {
@@ -236,18 +234,33 @@ main p {
 
 /* Animation */
 @keyframes color-change {
-  from { fill: #edc655; }
-  to { fill: #f76414; }
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
 @keyframes cloud-move {
-  from { transform: translate(0, 50px); }
-  to { transform: translate(200px, 50px); }
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move-reverse {
-  from { transform: translate(446px, 48px); }
-  to { transform: translate(100px, 48px); }
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .berlin-image {
@@ -367,7 +380,7 @@ a:focus {
 
 .button.contact:active {
   background-color: #e5c453;
-  color: #fff; /* needed to override the default link color */
+  color: #fff;
   font-family: "FuturaPT";
   font-style: normal;
   font-weight: 700;
@@ -401,10 +414,7 @@ a:focus {
 nav > ul {
   list-style-type: none;
   padding: 0;
-  margin: 1em 0;
-}
-
-nav > ul > li {
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -445,38 +455,40 @@ nav > ul > li > a:focus {
   margin: 15px 0 10px;
 }
 
+/* Hamburger Menu */
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle.navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: 10px;
   font-size: 20px;
-  padding-right: 0;
-}
-
-.navtoggle.responsive li {
-  display: block;
 }
 
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+  padding: 30px 0 0;
+  text-align: center;
+  font-size: 2em;
 }
 
 .navtoggle.responsive li {
   display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  padding: 30px 0;
 }
 
 .navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
+  padding: 0 0 450px;
+}
+
+.fa-bars {
+  color: #fff;
 }
 
 /* Responsive Design */
@@ -486,7 +498,6 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-    text-align: unset;
     display: inline-block;
   }
 
@@ -515,7 +526,19 @@ Medium devices (640px and larger)
   }
 
   nav > ul {
-    margin: 2em 0;
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 }
 
@@ -567,12 +590,8 @@ Large devices (1024px or larger)
     max-width: 80px;
   }
 
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
+  nav > ul {
+    margin: 2em 0;
   }
 }
 
@@ -592,4 +611,3 @@ X-large devices (1440px or larger)
 #hero {
   font-size: 22px;
 }
-
