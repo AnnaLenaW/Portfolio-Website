@@ -72,23 +72,27 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-family: "FuturaPT", sans-serif;
   line-height: 1.2;
   text-transform: none;
+  margin: 10px 0;
 }
 
 h1 {
-  font-size: 2.8em;
+  font-size: 4em;
+  line-height: 1.2;
   font-weight: 900;
   font-style: normal;
   text-align: center;
   margin: 0;
-  padding: 20px;
+  padding: 10px 0;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: 800;
   text-align: center;
 }
@@ -98,29 +102,31 @@ h2 .footer {
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 2.5em;
   font-weight: 700;
 }
 
 h4 {
-  font-size: 1.4em;
+  font-size: 2em;
   font-weight: 600;
   margin-top: 25px;
   margin-bottom: 0;
 }
 
 h5 {
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 1.6em;
+  font-weight: 500;
+  margin: 15px 0;
 }
 
 h6 {
-  font-size: 0.8em;
+  font-size: 1.4em;
   font-weight: 400;
-  color: #8e8e8e;
+  color: #393939;
 }
 
 p {
+  font-size: 16px;
   margin-top: 5px;
   margin-bottom: 10px;
 }
@@ -184,13 +190,19 @@ main p {
 }
 
 #hero {
-  background-color: #393939;
-  color: #fff;
+  background-color: #fff;
+  color: #393939;
   height: 700px;
   padding: 100px 20px;
   text-align: center;
   display: inline-block;
   width: 100%;
+}
+
+.scroll {
+  max-width: 50px;
+  display: center;
+  margin: 50px 20px;
 }
 
 #casestudy {
@@ -202,7 +214,7 @@ main p {
 }
 
 .project-section {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .project-section h5,
@@ -211,15 +223,11 @@ main p {
 }
 
 .project-section h3 {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
 }
 
-.about-header {
+.topheadline {
   padding: 60px 0 0;
-}
-
-#about-picture {
-  min-width: 300px;
 }
 
 .about-skills-tools {
@@ -315,7 +323,7 @@ a:focus {
   color: #fff;
   font-family: "FuturaPT";
   font-weight: 700;
-  padding: 5px 30px;
+  padding: 8px 100px;
   text-decoration: none;
   border-radius: 30px;
   float: left;
@@ -354,7 +362,7 @@ a:focus {
 }
 
 .button.contact {
-  background-color: #393939;
+  background-color: #fff;
   color: #e5c453;
   font-family: "FuturaPT";
   font-weight: 700;
@@ -502,12 +510,11 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding: 10px 0 50px;
     font-size: 18px;
   }
 
   #hero {
-    padding: 60px 80px;
+    padding: 80px 90px;
     font-size: 18px;
   }
 
@@ -551,13 +558,11 @@ Large devices (1024px or larger)
   }
 
   main {
-    padding: 80px 0;
     font-size: 18px;
   }
 
   #hero {
-    padding: 70px 120px;
-    font-size: 22px;
+    padding: 140px 120px;
   }
 
   footer {
@@ -606,8 +611,8 @@ X-large devices (1440px or larger)
   .logo {
     max-width: 100px;
   }
-}
 
-#hero {
-  font-size: 22px;
+  #hero {
+    padding: 130px 200px;
+  }
 }
