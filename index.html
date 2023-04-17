@@ -29,7 +29,7 @@
 </head>
 
 <body>
-  <header class="">
+  <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
     <a href="index.html"><img src="img/logotype.svg" alt="" class="logo" /></a>
@@ -37,7 +37,7 @@
       <ul class="navigation">
         <li><a href="index.html" class="navigation">Work</a></li>
         <li><a href="about.html" class="navigation">About</a></li>
-        <li><a href="#contact" class="navigation" onclick="menuToggle()">Contact</a></li>
+        <li><a href="contact.html" class="navigation">Contact</a></li>
         <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
 
       </ul>
@@ -47,22 +47,27 @@
   </header>
   <main>
     <!-- hero section starts here -->
-    <div id="hero" class="herotext">
+    <div id="hero">
       <h1>Hi, my name is Anna.</h1>
-      <h6>
-        I am a designer from Hamburg and have experience in
+    
+       <h5>I am a designer from Hamburg and have experience in
         developing responsive UX|UI designs, including for medical
         products and shopping software. It makes me happy when users
         move smoothly through interfaces and find their goal in a
-        playful way. I have a wide range of interests and love
-        learning new things every day.
-      </h6>
-    </div>
+        playful way. I have a lot of interests and love to grow with every single step I take.
+      </h5>
+        <h4>To see my work, please scroll down.</h4>
+        <picture>
+          <a href="#work">
+          <img src="img/scroll.svg" class="scroll" alt="" /></a>
+        </picture>
+        
+      </div>
     <!-- hero section ends -->
-    <!-- work section starts here -->
-    <div id="work row" class="container">
-      <h2>My Work</h2>
 
+    <!-- work section starts here -->
+    <div id="work" class="container">
+      <h2>My Work</h2>
       <!-- Start project block -->
 
       <!-- row 1 -->
@@ -137,9 +142,6 @@
           </picture>
         </div>
       </div>
-
-
-
 
       <!-- row 3 -->
       <div class="row">
@@ -1591,18 +1593,28 @@
         </div>
         <!-- col 2 -->
         <div class="col-md-6 col-lg-5">
+          <div class="project-section">
+            <h5 class="site-lineheight">Tools</h5>
+            <h6>HTML | CSS</h6>
+          </div>
+          <div class="project-section">
+            <h5 class="site-lineheight">Time</h5>
+            <h6>One Day - 03/2023</h6>
+          </div>
+          <div class="project-section">
           <h3>CSS Animation</h3>
           <p>
             This is an example of a SVG image which is animated
-            using keyframes.
+            using keyframes. I did this animation in the CareerFoundry "Front End Development for Designers" course.
           </p>
         </div>
-      </div>
+        </div>
+    </div>
     </div>
   </main>
   <!-- work section ends -->
 
-  <footer id="" class="">
+  <footer id="contact" class="">
     <h4>Get in Touch</h4>
     <p>
       I am open to part-time opportunities in Hamburg or remotely.
