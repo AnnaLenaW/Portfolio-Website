@@ -116,7 +116,7 @@ h5 {
 }
 
 h6 {
-  color: #999999;
+  color: #999;
   font-size: 1.5em;
   font-weight: 400;
 }
@@ -225,7 +225,7 @@ main p {
 }
 
 .topheadline {
-  padding: 50px 0 0;
+  padding: 60px 0 0;
 }
 
 #animation-picture {
@@ -240,7 +240,7 @@ main p {
 
 .copyright {
   padding: 30px;
-  font-size: 0.9em;
+  font-size: 1.2em;
   margin: 0;
 }
 
@@ -406,8 +406,6 @@ nav > ul > li > a:focus {
   padding: 10px;
 }
 
-
-
 /* Hamburger Menu */
 .navtoggle li:not(:last-child) {
   display: none;
@@ -518,6 +516,10 @@ Medium devices (640px and larger)
     padding: 130px 70px;
   }
 
+  .topheadline {
+    padding: 80px 0 0;
+  }
+
   .scroll {
     margin: 50px;
   }
@@ -551,6 +553,12 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
+
+  .copyright {
+    padding: 30px;
+    font-size: 1.4em;
+    margin: 0;
+  }
 }
 
 /* ==============================
@@ -566,12 +574,12 @@ Large devices (1024px or larger)
     padding: 180px 120px 10px;
   }
 
-  .scroll {
-    margin: 70px;
+  .topheadline {
+    padding: 120px 0 0;
   }
 
-  footer {
-    text-align: center;
+  .scroll {
+    margin: 70px;
   }
 
   .col-md-3 {
