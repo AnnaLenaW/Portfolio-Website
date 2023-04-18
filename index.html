@@ -37,7 +37,7 @@
       <ul class="navigation">
         <li><a href="index.html" class="navigation">Work</a></li>
         <li><a href="about.html" class="navigation">About</a></li>
-        <li><a href="contact.html" class="navigation">Contact</a></li>
+        <li><a href="#contact" class="navigation" onclick="menuToggle()">Contact</a></li>
         <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
 
       </ul>
@@ -50,7 +50,7 @@
     <div id="hero">
       <h1>Hi, my name is Anna.</h1>
     
-       <h5>I am a designer from Hamburg and have experience in
+       <h5 class="hero">I am a designer from Hamburg and have experience in
         developing responsive UX|UI designs, including for medical
         products and shopping software. It makes me happy when users
         move smoothly through interfaces and find their goal in a
@@ -100,7 +100,7 @@
               mockups used Figma, Illustrator and Slack.
             </p>
 
-            <a href="grow.html" class="button">To case study</a>
+            <a href="grow.html" class="button">CASE STUDY</a>
           </div>
         </div>
       </div>
@@ -130,7 +130,7 @@
               and the visual design.
             </p>
 
-            <a href="light-days.html" class="button">To case study</a>
+            <a href="light-days.html" class="button">CASE STUDY</a>
           </div>
         </div>
         <!-- col 2 -->
@@ -149,7 +149,7 @@
         <div class="col-md-6 col-lg-7">
           <div class="berlin-image">
             <picture>
-              <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto"
+              <svg id="animation-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto"
                 viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917"></polygon>
@@ -1614,15 +1614,13 @@
   </main>
   <!-- work section ends -->
 
-  <footer id="contact" class="">
-    <h4>Get in Touch</h4>
-    <p>
-      I am open to part-time opportunities in Hamburg or remotely.
-      <br />
-      Get in touch for opportunities or just to say hi.
-    </p>
+  <footer id="contact">
+    <h2>Get in Touch</h2>
+      <p> I am open to part-time opportunities in Hamburg or remotely.
+      <br>
+      Get in touch for opportunities or just to say hi.</p>
     <div>
-      <a href="mailto:annalena.westermann88@gmail.com" class="button contact">say hi</a>
+      <a href="mailto:annalena.westermann88@gmail.com" class="button contact">E-Mail Me</a>
     </div>
     <nav>
       <ul class="social-icons img">
@@ -1637,7 +1635,10 @@
         </li>
       </ul>
     </nav>
-    <p>Copyright Anna Lena Westermann 2023</p>
+    <div class="copyright">
+      Copyright Anna Lena Westermann 2023
+    </div>
+   
   </footer>
 
     <!-- Embeded JavaScript -->

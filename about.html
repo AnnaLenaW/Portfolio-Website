@@ -37,7 +37,7 @@
           <ul class="navigation">
             <li><a href="index.html" class="navigation">Work</a></li>
             <li><a href="about.html" class="navigation">About</a></li>
-            <li><a href="contact.html" class="navigation">Contact</a></li>
+            <li><a href="#contact" class="navigation" onclick="menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
     
           </ul>
@@ -49,7 +49,6 @@
         <main>
     <div class="container">
         <h1 class="topheadline">About Me</h1>
-    </div>
                 <!-- row 1 -->
                 <div class="row">
                     <!-- col 1 -->
@@ -94,29 +93,24 @@
                             combination a perfect work-life-balance.
                         </p>
 
-                        <a
-                            href="files/resume_alw.pdf"
-                            target="_blank"
-                            class="button"
-                            >Download Resume</a
-                        >
+                        <a href="files/resume_alw.pdf" target="_blank" class="button">Download Resume</a>
                     </div>
                 </div>
+        
+                    <h2>Skills And Tools</h2>
                 <!-- row 2 -->
                 <div class="row">
-                    <h2 class="about-skills-tools">Skills and Tools</h2>
-                </div>
-                <!-- row 3 -->
-                <div class="row">
                     <!-- col 1 -->
-                    <div class="col-md-6 skills-container">
+                    <div class="col-md-6 col-lg-6">
                         <h3>Skills</h3>
+
                         <h4>Methodology</h4>
                         <ul>
                             <li>Design Thinking Process</li>
                             <li>User-Centered Design</li>
                             <li>Lean UX</li>
                         </ul>
+
                         <h4>Research</h4>
                         <ul>
                             <li>Competitive and SWOT Analysis</li>
@@ -126,6 +120,14 @@
                             <li>User Stories</li>
                             <li>User Flows</li>
                         </ul>
+                        
+                        <h4>Testing</h4>
+                        <ul>
+                            <li>Usability Tests</li>
+                            <li>A|B Testing</li>
+                            <li>Preference Tests</li>
+                        </ul>
+                                       
                         <h4>Design</h4>
                         <ul>
                             <li>UI Design</li>
@@ -143,73 +145,68 @@
                             <li>Mockups</li>
                             <li>HTML and CSS Basics</li>
                         </ul>
-                        <h4>Testing</h4>
-                        <ul>
-                            <li>Usability Tests</li>
-                            <li>A|B Testing</li>
-                            <li>Preference Tests</li>
-                        </ul>
                     </div>
-                      <!-- col 2 -->
-                      <div class="col-md-6">
+
+                    <div class="col-md-6 col-lg-6">
                         <h3>Tools</h3>
+                        <h4>Design Software</h4>
                         <ul>
                             <li>Adobe Creative Suite</li>
-                            <li>Figma and Fig Jam</li>
                             <li>Adobe XD</li>
+                            <li>Figma and Fig Jam</li>
                             <li>InVision</li>
                             <li>Usability Hub</li>
-                            <li>Slack</li>
-                            <li>MS Office</li>
-                            <li>SEO and SEA</li>
+                        </ul>
+                        
+                        <h4>Development Software</h4>
+                        <ul>                                                      
                             <li>Wordpress</li>
-                            <li>Elementor</li>
+                            <li>Elementor</li>                         
+                        </ul>
+
+                        <h4>Marketing</h4>
+                        <ul>
+                            <li>SEO and SEA</li>
+                            <li>MS Office</li>
                             <li>Joomla</li>
                             <li>Clever Reach</li>
-                            <li>Photography</li>
+                            <li>Photography</li>                       
                         </ul>
-                    </div>
+
+                        <h4>Communication</h4>
+                        <ul>
+                            <li>Slack</li>
+                        </ul>
+                      </div>
                 </div>
         </main>
 
-        <footer id="contact" class="">
-            <h4>Get in Touch</h4>
-            <p>
-                I am open to part-time opportunities in Hamburg or remotely.
-                <br />
-                Get in touch for opportunities or just to say hi.
-            </p>
+        <footer id="contact">
+            <h2>Get in Touch</h2>
+              <p> I am open to part-time opportunities in Hamburg or remotely.
+              Get in touch for opportunities or just to say hi.</p>
             <div>
-                <a
-                    href="mailto:annalena.westermann88@gmail.com"
-                    class="button contact"
-                    >say hi</a
-                >
-
-                <nav>
-                    <ul class="social-icons img">
-                        <!--Social Media Layout and Placeholders-->
-                        <li>
-                            <a
-                                href="https://www.linkedin.com/in/anna-lena-westermann"
-                                target="_blank"
-                            >
-                                <img src="img/social-icons/linkedin.svg" alt=""
-                            /></a>
-                        </li>
-                        <li>
-                            <a href="https://www.behance.net/annalewesterm1">
-                                <img src="img/social-icons/behance.svg" alt=""
-                            /></a>
-                        </li>
-                    </ul>
-                </nav>
-                <p>Copyright Anna Lena Westermann 2023</p>
+              <a href="mailto:annalena.westermann88@gmail.com" class="button contact">E-Mail Me</a>
             </div>
-        </footer>
+            <nav>
+              <ul class="social-icons img">
+                <!--Social Media Layout and Placeholders-->
+                <li>
+                  <a href="https://www.linkedin.com/in/anna-lena-westermann" target="_blank">
+                    <img src="img/social-icons/linkedin.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="https://www.behance.net/annalewesterm1">
+                    <img src="img/social-icons/behance.svg" alt="" /></a>
+                </li>
+              </ul>
+            </nav>
+            <div class="copyright">
+              Copyright Anna Lena Westermann 2023
+            </div>
+           
+          </footer>
 
-        
-          <!-- Embeded JavaScript -->
           <script src="js/jquery-3.6.4.min.js"></script>
           <script src="js/scripts.js"></script>
 
