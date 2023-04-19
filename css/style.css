@@ -97,8 +97,8 @@ h2 {
 }
 
 h3 {
-  font-size: 2.3em;
-  font-weight: 700;
+  font-size: 2em;
+  font-weight: 800;
 }
 
 h4 {
@@ -109,20 +109,20 @@ h4 {
 }
 
 h5 {
-  color: #393939;
-  font-size: 1.4em;
-  font-weight: 400;
+  color: #393939e5;
+  font-size: 1.2em;
+  font-weight: 600;
   margin: 30px 0;
 }
 
 h6 {
   color: #999;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 400;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-top: 5px;
   margin-bottom: 10px;
 }
@@ -177,7 +177,7 @@ main p {
 }
 
 .row-case {
-  margin: 100;
+  margin: 0;
   padding: 0;
 }
 
@@ -188,6 +188,7 @@ main p {
 }
 
 #hero {
+  background-image: url("../img/grow/desktop/");
   background-color: #fff;
   color: #393939;
   height: 700px;
@@ -404,6 +405,11 @@ nav > ul > li > a:focus {
 [class*="col-"] {
   float: left;
   padding: 10px;
+}
+
+.grow-image01 {
+  background-image: url("../img/grow/desktop/arrow_@1x.png");
+  background-color: #ccc;
 }
 
 /* Hamburger Menu */
