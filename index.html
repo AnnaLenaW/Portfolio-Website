@@ -35,9 +35,9 @@
         <a href="index.html"><img src="img/logotype.svg" alt="" class="logo" /></a>
         <nav>
           <ul class="navigation">
-            <li><a href="#work" class="navigation">Work</a></li>
+            <li><a href="index.html#scrollable-pin" class="navigation">Work</a></li>
             <li><a href="about.html" class="navigation">About</a></li>
-            <li><a href="#contact" class="navigation" onclick="menuToggle()">Contact</a></li>
+            <li><a href="#contact" class="navigation">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a>
             </li>
 
@@ -59,8 +59,12 @@
       </h5>
       <h4>To see my work, please scroll down.</h4>
       <picture>
-        <a href="#work">
-          <img src="img/scroll.svg" class="scroll" alt="" /></a>
+        <!-- <a href="#work">
+          <img src="img/scroll.svg" class="scroll" alt="" />
+        </a> -->
+        <a href="#scrollable-pin">
+          <img src="img/scroll.svg" class="scroll" alt="" id="scrollable-pin" />
+        </a>
       </picture>
 
     </div>
@@ -1622,7 +1626,7 @@
       <br>
       Get in touch for opportunities or just to say hi.
     </p>
-    <div>
+    <div class="contact-button-container">
       <a href="mailto:annalena.westermann88@gmail.com" class="button contact">E-Mail Me</a>
     </div>
     <nav>
@@ -1644,7 +1648,6 @@
 
   </footer>
 
-  <!-- Embeded JavaScript -->
   <script src="js/jquery-3.6.4.min.js"></script>
   <script src="js/scripts.js"></script>
 

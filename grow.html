@@ -2,56 +2,57 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>grow Case Study</title>
-  <!-- Favicon -->
-  <link rel="icon" href="img/favicon.ico.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <title>grow Case Study</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-  <!-- Embeded CSS -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Embeded CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap"
-    rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
 
-  <!-- fontawesome -->
-  <script src="https://kit.fontawesome.com/7b8c7b340b.js" crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/7b8c7b340b.js" crossorigin="anonymous"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <header class="">
-    <div class="container">
-      <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html"><img src="img/logotype.svg" alt="" class="logo" /></a>
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html" class="navigation">Work</a></li>
-            <li><a href="about.html" class="navigation">About</a></li>
-            <li><a href="#contact" class="navigation" onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-          </ul>
-        </nav>
+    <header>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html"><img src="img/logotype.svg" alt="" class="logo" /></a>
+          <nav>
+            <ul class="navigation">
+                <li><a href="index.html#scrollable-pin" class="navigation">Work</a></li>
+                <li><a href="about.html" class="navigation">About</a></li>
+              <li><a href="#contact" class="navigation">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a>
+              </li>
+  
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <div class="row-case">
+  <main class="container">
       <picture>
         <source srcset="img/grow/mobile/grow_01_cover@0,5x.jpg" media="(max-width:767px)">
         <img src="img/grow/desktop/grow_01_header@1x.png" alt="My Image">
       </picture>
-    </div>
+
     <div class="row-case">
       <picture>
         <source srcset="img/grow/mobile/grow_02_duration@0,5x.png" media="(max-width:767px)">
@@ -66,7 +67,7 @@
         <img src="img/grow/desktop/grow_03_design_process@1x.png" alt="My Image">
       </picture>
 
-      <div class="row">
+      <div class="row-case">
         <div class="grow-image">
         <div class="col-md-6 col-lg-6">
           <h3>overview</h3>
@@ -150,13 +151,13 @@
         <img src="img/grow/desktop/grow_06_mid_fidelity_wireframes@1x.png" alt="My Image">
       </picture>
 
-      <div class="row-case">
-        <div class="col-md-6 col-lg-6">
+      <div class="row">
+        <div class="col-md-7 col-lg-7">
           <h3>User Feedback</h3>
           <p>I identify the most important pain points,of my user feedback.
             I prioritize them based on their level of necessity (critical or nice-to-have).</p>
         </div>
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-5 col-lg-5">
           <picture>
             <source srcset="img/grow/mobile/grow_07_user_feedback@0,5x.png" media="(max-width:767px)">
             <img src="img/grow/desktop/grow_08_user_feedback@1x.png" alt="My Image">
@@ -257,7 +258,7 @@
         </div>
       </div>
 
-      <div class="row-case">
+      <div class="row">
         <div class="col-md-6 col-lg-6">
           <h3>feedback analysis</h3>
           <p>

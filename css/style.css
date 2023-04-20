@@ -52,6 +52,11 @@ Accent Color (gold): #e5c453;
   box-sizing: border-box;
 }
 
+:root {
+  --color-red: #f01c1c;
+  --color-blue: #8b13e7;
+}
+
 header {
   background-color: #393939;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.212);
@@ -127,6 +132,10 @@ p {
   margin-bottom: 10px;
 }
 
+ul > li {
+  font-size: 1.2em;
+}
+
 img {
   width: 100%;
 }
@@ -140,11 +149,23 @@ main {
 footer {
   background-color: #393939;
   color: #fff;
-  height: 700px;
-  padding: 60px 20px;
+  height: 500px;
+  padding: 140px 20px 0;
   text-align: center;
   display: inline-block;
   width: 100%;
+}
+
+.contact-button-container {
+  padding: 30px 0;
+}
+
+.text-color-red {
+  color: var(--color-red);
+}
+
+.text-color-blue {
+  color: var(--color-blue);
 }
 
 main p {
@@ -240,9 +261,10 @@ main p {
 }
 
 .copyright {
-  padding: 30px;
-  font-size: 1.2em;
+  background-color: #393939;
+  color: #fff;
   margin: 0;
+  font-size: 1.2em;
 }
 
 a {
@@ -371,6 +393,9 @@ nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  justify-content: center;
+  display: flex;
+  padding-top: 40px;
 }
 
 nav > ul > li > a {
@@ -518,7 +543,7 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    height: 800px;
+    height: 100vh;
     padding: 130px 70px;
   }
 
@@ -576,7 +601,7 @@ Large devices (1024px or larger)
   }
 
   #hero {
-    height: 900px;
+    /* height: 900px; */
     padding: 180px 120px 10px;
   }
 
@@ -632,7 +657,7 @@ X-large devices (1440px or larger)
   }
 
   #hero {
-    height: 1200px;
+    /* height: 1200px; */
     padding: 300px 200px 10px;
     font-size: 18px;
   }
