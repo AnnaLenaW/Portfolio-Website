@@ -57,8 +57,12 @@ Accent Color (gold): #e5c453;
   --color-blue: #8b13e7;
 }
 
+.color_rosa {
+  color: #ffb0b0;
+}
+
 header {
-  background-color: #393939;
+  background-color: #393939f1;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.212);
   position: fixed;
   width: 100%;
@@ -114,15 +118,15 @@ h4 {
 }
 
 h5 {
-  color: #393939e5;
-  font-size: 1.2em;
+  color: #393939;
+  font-size: 1.4em;
   font-weight: 600;
-  margin: 30px 0;
+  margin: 5px 0;
 }
 
 h6 {
-  color: #999;
-  font-size: 1em;
+  color: #393939;
+  font-size: 1.2em;
   font-weight: 400;
 }
 
@@ -149,8 +153,8 @@ main {
 footer {
   background-color: #393939;
   color: #fff;
-  height: 500px;
-  padding: 140px 20px 0;
+  height: 600px;
+  padding: 80px 20px 0;
   text-align: center;
   display: inline-block;
   width: 100%;
@@ -173,7 +177,7 @@ main p {
 }
 
 .container {
-  padding: 0 20px; /* left and right */
+  padding: 0 15px; /* left and right */
 }
 
 .site-lineheight {
@@ -187,8 +191,12 @@ main p {
 
 /* 25px top and bottom, 0 left and right */
 .row {
-  margin: 10px 0 50px;
-  background-color: #fff;
+  padding: 0;
+  margin: 20px 0;
+
+  /* border: 1.5px solid #e5c3532a; */
+
+  /* background-color: #e5c3530a; */
 }
 
 .row::after {
@@ -247,7 +255,7 @@ main p {
 }
 
 .topheadline {
-  padding: 60px 0 0;
+  padding: 80px 0 0;
 }
 
 #animation-picture {
@@ -255,16 +263,9 @@ main p {
 }
 
 .social-icons img {
-  max-width: 60px;
+  max-width: 50px;
   display: inline-block;
   justify-content: space-around;
-}
-
-.copyright {
-  background-color: #393939;
-  color: #fff;
-  margin: 0;
-  font-size: 1.2em;
 }
 
 a {
@@ -395,7 +396,6 @@ nav > ul {
   margin: 0;
   justify-content: center;
   display: flex;
-  padding-top: 40px;
 }
 
 nav > ul > li > a {
@@ -466,7 +466,7 @@ nav > ul > li > a:focus {
 }
 
 .navtoggle.responsive li:last-child {
-  padding: 0 0 450px;
+  padding: 0 0 400px;
 }
 
 .fa-bars {
