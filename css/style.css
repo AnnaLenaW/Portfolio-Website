@@ -289,11 +289,11 @@ a:focus {
 
 .button {
   background-color: #e5c453;
-  color: #fff;
+  color: #393939;
   font-family: "FuturaPT";
   font-size: 1.2em;
-  font-weight: 700;
-  padding: 6px 40px;
+  font-weight: 800;
+  padding: 5px 40px;
   margin: 5px 0 20px;
   text-decoration: none;
   border-radius: 30px;
@@ -303,9 +303,9 @@ a:focus {
 
 .button-case {
   background-color: #e5c453;
-  color: #fff;
+  color: #393939;
   font-family: "FuturaPT";
-  font-weight: 700;
+  font-weight: 800;
   padding: 6px 40px;
   text-decoration: none;
   border-radius: 30px;
@@ -315,18 +315,18 @@ a:focus {
 
 .button:hover {
   background-color: #f1cb4e;
-  color: #fff;
+  color: #393939;
+  font-weight: 800;
   font-family: "FuturaPT";
-  padding: 8px 42px;
   opacity: 0.8;
 }
 
 .button:active {
   background-color: #fff;
-  color: #e5c453;
+  color: #393939;
   font-family: "FuturaPT";
-  font-weight: 700;
-  padding: 5px 32px;
+  font-weight: 800;
+  padding: 3px 38px;
   text-decoration: none;
   border-radius: 30px;
   border: 2px solid #e5c453;
