@@ -61,6 +61,10 @@ Accent Color (gold): #e5c453;
   color: #ffb0b0;
 }
 
+.color_blue {
+  color: #22325f;
+}
+
 header {
   background-color: #393939f1;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.212);
@@ -658,7 +662,7 @@ X-large devices (1440px or larger)
 
   #hero {
     /* height: 1200px; */
-    padding: 300px 200px 10px;
+    padding: 200px 200px 10px;
     font-size: 18px;
   }
 
