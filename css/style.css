@@ -65,6 +65,10 @@ Accent Color (gold): #e5c453;
   color: #22325f;
 }
 
+.color_white {
+  color: #fff;
+}
+
 header {
   background-color: #393939f1;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.212);
@@ -221,7 +225,9 @@ main p {
 }
 
 #hero {
-  background-image: url("../img/grow/desktop/");
+  background-image: url("../img/about-me/hg_1200px_02@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   background-color: #fff;
   color: #393939;
   height: 700px;
@@ -606,15 +612,15 @@ Large devices (1024px or larger)
 
   #hero {
     /* height: 900px; */
-    padding: 180px 120px 10px;
+    padding: 220px 120px 10px;
   }
 
   .topheadline {
-    padding: 120px 0 0;
+    padding: 150px 0 0;
   }
 
   .scroll {
-    margin: 70px;
+    margin: 40px;
   }
 
   .col-md-3 {
