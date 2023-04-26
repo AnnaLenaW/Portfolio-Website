@@ -221,7 +221,9 @@ main p {
 }
 
 #hero {
-  background-image: url("../img/grow/desktop/");
+  background-image: url("../img/hamburg_outline@2x.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-color: #fff;
   color: #393939;
   height: 700px;
@@ -606,7 +608,7 @@ Large devices (1024px or larger)
 
   #hero {
     /* height: 900px; */
-    padding: 180px 120px 10px;
+    padding: 240px 120px 10px;
   }
 
   .topheadline {
@@ -614,7 +616,7 @@ Large devices (1024px or larger)
   }
 
   .scroll {
-    margin: 70px;
+    margin: 20px;
   }
 
   .col-md-3 {
