@@ -239,13 +239,14 @@ main p {
 }
 
 #hero {
-  background-image: url("../img/about-me/hg_1200px_02@2x.jpg");
+  /*  background-image: url("../img/about-me/hg_1200px_02@2x.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%; */
+
   background-color: #fff;
   color: #393939;
   height: 700px;
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
   display: inline-block;
   width: 100%;
