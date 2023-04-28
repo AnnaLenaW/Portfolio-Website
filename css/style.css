@@ -228,10 +228,20 @@ main p {
   display: table;
 }
 
+.flex-row {
+  display: flex;
+}
+
+.vertical-center-flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #hero {
-  background-image: url("../img/hamburg_outline@2x.jpg");
-  background-size: 100%;
+  background-image: url("../img/about-me/hg_1200px_02@2x.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
   background-color: #fff;
   color: #393939;
   height: 700px;
@@ -505,7 +515,7 @@ nav > ul > li > a:focus {
 }
 
 .ld_logo {
-  margin: 80px;
+  margin: 50px;
   padding: 10px;
 }
 
@@ -599,12 +609,48 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
   .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
     width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
   }
 
   .col-md-6 {
     width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
   }
 
   nav > ul {
@@ -651,7 +697,7 @@ Large devices (1024px or larger)
     margin: 40px;
   }
 
-  .col-md-3 {
+  .col-md-4 {
     width: 33.33%;
   }
 
