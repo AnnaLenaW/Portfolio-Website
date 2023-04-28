@@ -65,6 +65,14 @@ Accent Color (gold): #e5c453;
   color: #22325f;
 }
 
+.color_white {
+  color: #fff;
+}
+
+.color_lightblue {
+  color: #72d4c3;
+}
+
 header {
   background-color: #393939f1;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.212);
@@ -475,9 +483,34 @@ nav > ul > li > a:focus {
   padding: 0 0 400px;
 }
 
-.fa-bars {
+.fa-bars { /* color hamburger menu */
   color: #fff;
 }
+
+/* lightdays */
+
+.competitor {
+  margin: 80px 0 0;
+  padding: 0 60px;
+}
+
+.colours {
+  margin: 80px 0 0;
+  padding: 0 100px;
+}
+
+.illustration {
+  margin: 100px 0 0;
+  padding: 0;
+}
+
+.ld_logo {
+  margin: 80px;
+  padding: 10px;
+}
+
+/* toogood */
+
 
 /* Animation */
 @keyframes color-change {
@@ -608,15 +641,15 @@ Large devices (1024px or larger)
 
   #hero {
     /* height: 900px; */
-    padding: 240px 120px 10px;
+    padding: 220px 120px 10px;
   }
 
   .topheadline {
-    padding: 120px 0 0;
+    padding: 150px 0 0;
   }
 
   .scroll {
-    margin: 20px;
+    margin: 40px;
   }
 
   .col-md-3 {
