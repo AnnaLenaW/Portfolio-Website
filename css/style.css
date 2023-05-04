@@ -74,7 +74,7 @@ Accent Color (gold): #e5c453;
 }
 
 header {
-  background-color: #393939f1;
+  background-color: #393939ec;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.212);
   position: fixed;
   width: 100%;
@@ -83,7 +83,7 @@ header {
 body {
   background-color: #fff;
   font-family: 'FuturaPT', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.2;
   color: #393939;
@@ -102,7 +102,7 @@ h6 {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3.2em;
   line-height: 1;
   font-weight: 900;
   font-style: normal;
@@ -112,7 +112,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: 800;
   text-align: center;
 }
@@ -123,7 +123,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: 600;
   margin-top: 25px;
   margin-bottom: 0;
@@ -132,13 +132,13 @@ h4 {
 h5 {
   color: #393939;
   font-size: 1.4em;
-  font-weight: 600;
+  font-weight: 500;
   margin: 5px 0;
 }
 
 h6 {
   color: #393939;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 400;
 }
 
@@ -146,6 +146,7 @@ p {
   font-size: 1.2em;
   margin-top: 5px;
   margin-bottom: 10px;
+  font-weight: 400;
 }
 
 ul > li {
@@ -165,8 +166,8 @@ main {
 footer {
   background-color: #393939;
   color: #fff;
-  height: 600px;
-  padding: 80px 20px 0;
+  height: 500px;
+  padding: 60px 20px 0;
   text-align: center;
   display: inline-block;
   width: 100%;
@@ -186,6 +187,11 @@ footer {
 
 main p {
   max-width: 600px;
+}
+
+.center-text {
+  max-width: 600px;
+  text-align: center;
 }
 
 .container {
@@ -254,9 +260,8 @@ main p {
 }
 
 .scroll {
-  max-width: 45px;
+  max-width: 20px;
   display: center;
-  margin: 30px;
 }
 
 #casestudy {
@@ -289,7 +294,7 @@ main p {
 }
 
 .social-icons img {
-  max-width: 50px;
+  max-width: 30px;
   display: inline-block;
   justify-content: space-around;
 }
@@ -511,6 +516,10 @@ nav > ul > li > a:focus {
   padding: 0 100px;
 }
 
+.icons {
+  margin: 50px;
+}
+
 .illustration {
   margin: 100px 0 0;
   padding: 0;
@@ -594,7 +603,7 @@ Medium devices (640px and larger)
 
   #hero {
     height: 100vh;
-    padding: 50px 70px;
+    padding: 40px 70px;
   }
 
   .topheadline {
@@ -688,12 +697,12 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   header {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   #hero {
     /* height: 900px; */
-    padding: 50px 120px 10px;
+    padding: 0 120px 10px;
   }
 
   .topheadline {
@@ -701,7 +710,7 @@ Large devices (1024px or larger)
   }
 
   .scroll {
-    margin: 40px;
+    margin: 50px;
   }
 
   .col-md-4 {
@@ -740,7 +749,7 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
   header {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .logo {
