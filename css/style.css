@@ -73,6 +73,10 @@ Accent Color (gold): #e5c453;
   color: #72d4c3;
 }
 
+.color_readily-green {
+  color: #759986;
+}
+
 header {
   background-color: #393939ec;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.212);
@@ -83,7 +87,7 @@ header {
 body {
   background-color: #fff;
   font-family: 'FuturaPT', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.2;
   color: #393939;
@@ -532,6 +536,12 @@ nav > ul > li > a:focus {
 
 /* toogood */
 
+/* readily */
+
+.infotext {
+  max-width: 300px;
+}
+
 /* Animation */
 @keyframes color-change {
   from {
@@ -603,7 +613,7 @@ Medium devices (640px and larger)
 
   #hero {
     height: 100vh;
-    padding: 40px 70px;
+    padding: 50px 70px;
   }
 
   .topheadline {
@@ -669,6 +679,11 @@ Medium devices (640px and larger)
     flex-direction: row;
   }
 
+  .skills {
+    max-width: 800px;
+    padding: 50px;
+  }
+
   nav > ul {
     margin: 1em 0;
   }
@@ -702,7 +717,7 @@ Large devices (1024px or larger)
 
   #hero {
     /* height: 900px; */
-    padding: 0 120px 10px;
+    padding: 50px 120px 10px;
   }
 
   .topheadline {
@@ -711,6 +726,11 @@ Large devices (1024px or larger)
 
   .scroll {
     margin: 50px;
+  }
+
+  .skills {
+    max-width: 800px;
+    padding: 50px;
   }
 
   .col-md-4 {
@@ -758,7 +778,7 @@ X-large devices (1440px or larger)
 
   #hero {
     /* height: 1200px; */
-    padding: 80px 400px 10px;
+    padding: 80px 350px 10px;
     font-size: 18px;
   }
 

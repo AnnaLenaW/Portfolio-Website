@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>readily Case Study</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Embeded CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/7b8c7b340b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html"
+            ><img src="img/logotype.svg" alt="" class="logo"
+          /></a>
+          <nav>
+            <ul class="navigation">
+              <li>
+                <a href="index.html#scrollable-pin" class="navigation">Work</a>
+              </li>
+              <li><a href="about.html" class="navigation">About</a></li>
+              <li>
+                <a href="#contact" class="navigation" onclick="menuToggle()"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fa-solid fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <picture>
+        <source
+          srcset="img/readily/mobile/00_readily_opener@0,5x.jpg"
+          media="(max-width:767px)"
+        />
+        <img
+          src="img/readily/desktop/00_readily_opener@1x.jpg"
+          alt="My Image"
+        />
+      </picture>
+
+      <div class="container">
+        <h3 class="color_readily-green">Design Process</h3>
+        <picture>
+          <source
+            srcset="img/readily/mobile/01_readily_design-process@0,5x.png"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/readily/desktop/01_readily_design-process@1x.png"
+            alt="My Image"
+          />
+        </picture>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <h3 class="color_readily-green">Overview</h3>
+            <p>
+              redily is a vintage clothing app that allows users to buy and sell
+              sustainable clothing both online and in their neighbourhood. For
+              the app target group (people between 25-34) sustainably purchased
+              clothing is very important.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <h3 class="color_readily-green">Key Functionalities</h3>
+            <ul>
+              <li>Create a profil</li>
+              <li>Upload items to sell</li>
+              <li>Leave reviews for other sellers</li>
+              <li>Favourite items: Show when sold</li>
+              <li>Set filter</li>
+              <li>Map showing searched products in the neighbourhood</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row flex-row">
+          <div class="col-md-6 col-lg-6">
+            <picture>
+              <source
+                srcset="img/readily/mobile/02_readily_image@0,5x.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/readily/desktop/02_readily_image@1x.jpg"
+                alt="My Image"
+              />
+            </picture>
+          </div>
+
+          <div class="col-md-6 col-lg-6 vertical-center-flex-col">
+            <h3 class="color_readily-green">Objective</h3>
+            <p>
+              The aim of the app is to make it easy for users to buy and sell
+              vintage clothing, no matter where they are. In addition, the users
+              can leave reviews for other sellers and see when a favourite item
+              has been sold. With the help of a map, searched products in the
+              neighbourhood are displayed and the user can see how long it takes
+              to to pick up the item by foot, bike or car.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <h3 class="color_readily-green">Research | Inspiration</h3>
+            <p>
+              At the beginning, I conducted a competitive analysis and made a
+              general research. Here I learned from them and focused on their
+              strengths. This way I was able to find solutions for my key
+              functions.
+            </p>
+          </div>
+        </div>
+
+        <h4 class="color_readily-green">Competitor Analysis</h4>
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <picture>
+              <source
+                srcset="
+                  img/readily/mobile/03_readily_competitor-depopp@0,5x.jpg
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/readily/desktop/03_readily_competitor-depopp@1x.jpg"
+                alt="My Image"
+              />
+            </picture>
+            <ul>
+              <li>Variety of groups, topics and products</li>
+              <li>Easy to navigate</li>
+              <li>Tidy, clean design</li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-6">
+            <picture>
+              <source
+                srcset="
+                  img/readily/mobile/04_readily_competitor-vinted@0,5x.jpg
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/readily/desktop/04_readily_competitor-vinted@1x.jpg"
+                alt="My Image"
+              />
+            </picture>
+            <ul>
+              <li>Easy to navigate</li>
+              <li>Create a profile: Steps are clear and beautiful designed</li>
+              <li>Upload screen: Very easy to handle</li>
+              <li>
+                Icons have high recognition value and are product specific
+              </li>
+              <li>Clean and structured design</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 class="color_readily-green">Inspiration</h4>
+        <picture>
+          <source
+            srcset="img/readily/mobile/05_readily_inspiration@0,5x.jpg"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/readily/desktop/05_readily_inspiration@1x.jpg"
+            alt="My Image"
+          />
+        </picture>
+
+        <div class="flex-row">
+          <div class="col-md-6 col-lg-6 vertical-center-flex-col">
+            <h3 class="color_readily-green">Wireframing</h3>
+            <p>
+              With the inspirations in mind and taking design heuristics and
+              design principles into account, I created the first low fidelity
+              wireframes with pen and paper. First my Crazy 8 skills came into
+              action.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <picture>
+              <source
+                srcset="img/readily/mobile/06_readily_lowfi@0,5x.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/readily/desktop/06_readily_lowfi@1x.jpg"
+                alt="My Image"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <h4 class="color_readily-green">Mid fidelity Wireframes</h4>
+        <picture>
+          <source
+            srcset="img/readily/mobile/07_readily_midfi@0,5x.jpg"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/readily/desktop/07_readily_midfi@1x.jpg"
+            alt="My Image"
+          />
+        </picture>
+
+        <div class="flex-row">
+          <div class="col-md-6 col-lg-6">
+            <picture>
+              <source
+                srcset="img/readily/mobile/08_readily_stile-guide@0,5x.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/readily/desktop/08_readily_stile-guide@1x.jpg"
+                alt="My Image"
+              />
+            </picture>
+          </div>
+
+          <div class="col-md-6 col-lg-6 vertical-center-flex-col">
+            <h3 class="color_readily-green">Syle Guide</h3>
+            <p>In the next step, I developed the style guide to give my app a uniform character and recognition value. 
+                With the created stile guide I created a visual hierarchy.</p>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="col-md-6 col-lg-6 vertical-center-flex-col">
+            <h4 class="color_readily-green">Logo</h4>
+            <p>
+              The name comes from easy to find. Find and buy products quickly
+              and easily. The logo consists of a hanger that symbolizes clothes.
+              The leaf forms the bridge to sustainability. In the app, the buyer
+              can directly look up how far away the product they are looking for
+              is and how long it takes by bike or on foot.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <picture>
+              <source
+                srcset="img/readily/mobile/09_readily_logo@0,5x.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/readily/desktop/09_readily_logo@1x.jpg"
+                alt="My Image"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="col-md-6 col-lg-6 vertical-center-flex-col">
+            <h4 class="color_readily-green">Icons</h4>
+            <p>
+              The icon design is modern and simple. By using icons, users are
+              navigated through the app more easily and filters are set faster.
+              Together they form a family.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <picture>
+              <source
+                srcset="img/readily/mobile/10_readily_icons@0,5x.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/readily/desktop/10_readily_icons@1x.jpg"
+                alt="My Image"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="col-md-6 col-lg-6 vertical-center-flex-col">
+            <h4 class="color_readily-green">Colours</h4>
+            <p>
+              The colours are fresh and modern. In combination, they create a
+              vintage character.
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-6">
+            <picture>
+              <source
+                srcset="img/readily/mobile/11_readily_colours@0,5x.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/readily/desktop/11_readily_colours@1x.jpg"
+                alt="My Image"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="col-md-6 col-lg-6 vertical-center-flex-col">
+            <h4 class="color_readily-green">Typography</h4>
+            <p>redily uses the typeface Niveau Grotes.</p>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <picture>
+              <source
+                srcset="img/readily/mobile/12_readily_type@0,5x.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/readily/desktop/12_readily_type@1x.jpg"
+                alt="My Image"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="col-md-6 col-lg-6 vertical-center-flex-col">
+            <h4 class="color_readily-green">Buttons</h4>
+            <p>
+              Primary and secondary colours as well as a typographic hierarchy
+              allow the user to navigate easily and quickly through the app.
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-6">
+            <picture>
+              <source
+                srcset="img/readily/mobile/14_readily_buttons@0,5x.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/readily/desktop/13_readily_buttons@1x.jpg"
+                alt="My Image"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="col-md-6 col-lg-6">
+            <picture>
+              <source
+                srcset="img/readily/mobile/14_readily_final-ui-image@0,5x.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/readily/desktop/14_readily_final-ui-image@1x.jpg"
+                alt="My Image"
+              />
+            </picture>
+          </div>
+
+          <div class="col-md-6 col-lg-6 vertical-center-flex-col">
+            <h3 class="color_readily-green">Final UI</h3>
+            <p>
+              After creating the style guide, I implemented the images and icons into my
+              screens. I defined a visual hierarchy with colours, typography and text and designed the primary and
+              secondary buttons.
+            </p>
+          </div>
+        </div>
+
+        <picture>
+          <source
+            srcset="img/readily/mobile/15_readily_final-ui@0,5x.jpg"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/readily/desktop/15_readily_final-ui@1x.jpg"
+            alt="My Image"
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="img/readily/mobile/16_readily_mockup@0,5x.jpg"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/readily/desktop/16_readily_mockup@1x.jpg"
+            alt="My Image"
+          />
+        </picture>
+
+        <h3 class="color_readily-green">Retrospective</h3>
+        <p>
+          To find out which project tasks went well and which didn't go well, I
+          did an agile retrospective. I analysed the workflows that could be
+          improved and came up with solutions that will be considered in further
+          iterations.
+        </p>
+
+        <div class="row-case">
+          <div class="col-md-4 col-lg-4">
+            <h4 class="color_readily-green">What went well</h4>
+            <ul>
+              <li>
+                The style guide went well. I found a lot of inspirations, to
+                create a suitable colour palette.
+              </li>
+              <li>To create the icons was fun.</li>
+              <li>
+                The exchange with my mentor were very helpful during the
+                project. Through weekly calls, I was able to optimize the
+                project regularly and complete it on time.
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 col-lg-4">
+            <h4 class="color_readily-green">What can be improved</h4>
+            <p>
+              It was my first project with Adobe XD. I needed a lot of time to
+              get the project done.
+            </p>
+            <ul>
+              <p class="color_readily-green">Skills</p>
+              <li>Adobe XD</li>
+            </ul>
+
+            <ul>
+              <h6 class="color_readily-green">Processes</h6>
+              <li>Create components, simpler and faster way of working.</li>
+            </ul>
+            <ul>
+              <p class="color_readily-green">Skills gap</p>
+              <li>Components</li>
+              <li>Workflow</li>
+            </ul>
+            <ul>
+              <p class="color_readily-green">Solution</p>
+              <li>
+                Check out tutorials and help sites every day 20-30 minutes.
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 col-lg-4">
+            <h4 class="color_readily-green">What didn't go well</h4>
+            <ul>
+              <li>Regular mentor calls helped avoid major mistakes.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2 class="color_readily-green">Thank's for watching</h2>
+        </div>
+      </div>
+    </main>
+
+    <footer id="contact">
+      <h3>Get in Touch</h3>
+      <p>
+        I am open to part-time opportunities in Hamburg or remotely.
+        <br />
+        Get in touch for opportunities or just to say hi.
+      </p>
+      <div class="contact-button-container">
+        <a href="mailto:annalena.westermann88@gmail.com" class="button contact"
+          >E-Mail Me</a
+        >
+      </div>
+      <nav>
+        <ul class="social-icons img">
+          <!--Social Media Layout and Placeholders-->
+          <li>
+            <a
+              href="https://www.linkedin.com/in/anna-lena-westermann"
+              target="_blank"
+            >
+              <img src="img/social-icons/linkedin.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.behance.net/annalewesterm1">
+              <img src="img/social-icons/behance.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+        Copyright Anna Lena Westermann 2023
+      </nav>
+    </footer>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
