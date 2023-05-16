@@ -153,6 +153,10 @@ p {
   font-weight: 400;
 }
 
+strong {
+  font-weight: 600;
+}
+
 ul > li {
   font-size: 1.2em;
 }
@@ -324,11 +328,11 @@ a:focus {
 
 .button {
   background-color: #e5c453;
-  color: #393939;
+  color: #fff;
   font-family: "FuturaPT";
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 800;
-  padding: 5px 40px;
+  padding: 15px 40px;
   margin: 5px 0 20px;
   text-decoration: none;
   border-radius: 30px;
@@ -336,24 +340,12 @@ a:focus {
   transition: 0.2s opacity;
 }
 
-.button-case {
-  background-color: #e5c453;
-  color: #393939;
-  font-family: "FuturaPT";
-  font-weight: 800;
-  padding: 6px 40px;
-  text-decoration: none;
-  border-radius: 30px;
-  float: right;
-  transition: 0.2s opacity;
-}
-
 .button:hover {
   background-color: #f1cb4e;
-  color: #393939;
+  color: #fff;
   font-weight: 800;
   font-family: "FuturaPT";
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .button:active {
@@ -361,10 +353,22 @@ a:focus {
   color: #393939;
   font-family: "FuturaPT";
   font-weight: 800;
-  padding: 3px 38px;
+  padding: 14px 38px;
   text-decoration: none;
   border-radius: 30px;
   border: 2px solid #e5c453;
+}
+
+.button-case {
+  background-color: #e5c453;
+  color: #393939;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  float: right;
+  transition: 0.2s opacity;
 }
 
 .button.contact {
