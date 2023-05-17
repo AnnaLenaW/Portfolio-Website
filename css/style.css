@@ -232,7 +232,7 @@ main p {
 }
 
 .row-case {
-  margin: 0;
+  margin: 100px 0;
   padding: 0;
 }
 
@@ -341,7 +341,7 @@ a:focus {
 }
 
 .button:hover {
-  background-color: #f1cb4e;
+  background-color: #e5c453;
   color: #fff;
   font-weight: 800;
   font-family: "FuturaPT";
@@ -350,7 +350,7 @@ a:focus {
 
 .button:active {
   background-color: #fff;
-  color: #393939;
+  color: #e5c453;
   font-family: "FuturaPT";
   font-weight: 800;
   padding: 14px 38px;
