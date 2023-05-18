@@ -366,7 +366,7 @@ a:focus {
   font-family: "FuturaPT";
   font-size: 1em;
   font-weight: 800;
-  padding: 5px 15px;
+  padding: 15px 20px;
   margin: 5px 0;
   text-decoration: none;
   border-radius: 30px;
@@ -381,7 +381,7 @@ a:focus {
   background-color: #e5c35311;
   color: #e5c453;
   font-weight: 800;
-  padding: 5px 15px;
+  padding: 15px 20px;
   margin: 5px 0;
   text-decoration: none;
   border-radius: 30px;
