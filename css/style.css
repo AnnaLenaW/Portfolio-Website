@@ -813,7 +813,7 @@ Medium devices (640px and larger)
 
   #hero {
     height: 100vh;
-    padding: 50px 70px;
+    padding: 40px 70px;
   }
 
   .topheadline {
@@ -821,7 +821,7 @@ Medium devices (640px and larger)
   }
 
   .scroll {
-    margin: 50px;
+    margin: 20px;
   }
 
   header nav {
@@ -917,7 +917,7 @@ Large devices (1024px or larger)
 
   #hero {
     /* height: 900px; */
-    padding: 20px 120px 10px;
+    padding: 40px 120px 10px;
   }
 
   .topheadline {
@@ -925,7 +925,7 @@ Large devices (1024px or larger)
   }
 
   .scroll {
-    margin: 50px;
+    margin: 10px;
   }
 
   .skills {
@@ -969,7 +969,7 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
   header {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .logo {
@@ -979,10 +979,10 @@ X-large devices (1440px or larger)
   #hero {
     /* height: 1200px; */
     padding: 80px 350px 10px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .scroll {
-    margin: 100px;
+    margin: 30px;
   }
 }
