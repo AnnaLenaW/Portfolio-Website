@@ -332,15 +332,16 @@ a:focus {
   font-family: "FuturaPT";
   font-size: 1em;
   font-weight: 800;
-  padding: 15px 40px;
-  margin: 5px 0 20px;
+  padding: 10px 30px;
+  margin: 5px 0;
   text-decoration: none;
   border-radius: 30px;
   float: left;
   transition: 0.2s opacity;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #e5c453;
   color: #fff;
   font-weight: 800;
@@ -353,10 +354,54 @@ a:focus {
   color: #e5c453;
   font-family: "FuturaPT";
   font-weight: 800;
-  padding: 14px 38px;
+  padding: 9px 28px;
   text-decoration: none;
   border-radius: 30px;
   border: 2px solid #e5c453;
+}
+
+.button-cv {
+  background-color: #fff;
+  color: #e5c453;
+  font-family: "FuturaPT";
+  font-size: 1em;
+  font-weight: 800;
+  padding: 5px 15px;
+  margin: 5px 0;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid #e5c453;
+  float: unset;
+  transition: 0.2s opacity;
+}
+
+.button-cv:hover,
+.button-cv:focus,
+.button-cv:active {
+  background-color: #e5c35311;
+  color: #e5c453;
+  font-weight: 800;
+  padding: 5px 15px;
+  margin: 5px 0;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid #e5c453;
+  font-family: "FuturaPT";
+  opacity: 0.9;
+}
+
+.button-cv:active {
+  background-color: #fff;
+  color: #e5c453;
+  font-family: "FuturaPT";
+  font-size: 1em;
+  font-weight: 800;
+  padding: 5px 15px;
+  margin: 5px 0;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid #e5c453;
+  float: unset;
 }
 
 .button-case {
@@ -369,6 +414,155 @@ a:focus {
   border-radius: 30px;
   float: right;
   transition: 0.2s opacity;
+}
+
+.button-tg {
+  background-color: #fff;
+  color: #72d4c3;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid #72d4c3;
+  float: right;
+}
+
+.button-tg:hover {
+  background-color: #72d4c419;
+  color: #72d4c3;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  float: right;
+}
+
+.button-tg:active,
+.button-tg:hover,
+.button-tg:focus {
+  background-color: #72d4c419;
+  color: #72d4c3;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid #72d4c3;
+}
+
+.button-tg-l {
+  background-color: #fff;
+  color: #72d4c3;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid #72d4c3;
+  float: left;
+}
+
+.button-tg-l:hover,
+.button-tg-l:active,
+.button-tg-l:focus {
+  background-color: #72d4c419;
+  color: #72d4c3;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  float: left;
+}
+
+.button-ld {
+  background-color: #fff;
+  color: #ffb0b0;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid #ffb0b0;
+  float: right;
+}
+
+.button-ld:hover,
+.button-ld:active,
+.button-ld:focus {
+  background-color: #ffb0b014;
+  color: #ffb0b0;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  float: right;
+}
+
+.button-g {
+  background-color: #fff;
+  color: #22325f;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid #22325f;
+  float: right;
+}
+
+.button-g:hover,
+.button-g:active,
+.button-g:focus {
+  background-color: #22325f17;
+  color: #22325f;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  float: right;
+}
+
+.button-g-l {
+  background-color: #fff;
+  color: #22325f;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid #22325f;
+  float: left;
+}
+
+.button-g-l:hover,
+.button-g-l:active,
+.button-g-l:focus {
+  background-color: #22325f17;
+  color: #22325f;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  float: left;
+}
+
+.button-r {
+  background-color: #fff;
+  color: #759986;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid #759986;
+  float: right;
+}
+
+.button-r:hover,
+.button-r:active,
+.button-r:focus {
+  background-color: #7599861b;
+  color: #759986;
+  font-family: "FuturaPT";
+  font-weight: 800;
+  padding: 16px 40px;
+  float: right;
 }
 
 .button.contact {
@@ -385,7 +579,9 @@ a:focus {
   transition: 0.2s opacity;
 }
 
-.button.contact:hover {
+.button.contact:hover,
+.button.contact:active,
+.button.contact:focus {
   background-color: #e5c3530c;
   color: #e5c453;
   font-family: "FuturaPT";
@@ -721,7 +917,7 @@ Large devices (1024px or larger)
 
   #hero {
     /* height: 900px; */
-    padding: 50px 120px 10px;
+    padding: 20px 120px 10px;
   }
 
   .topheadline {
